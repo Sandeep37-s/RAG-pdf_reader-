@@ -38,8 +38,7 @@ flask_rag_app/
 
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone (https://github.com/Sandeep37-s/RAG-pdf_reader-)
 
 2️⃣ Create Virtual Environment (Python 3.10)
 py -3.10 -m venv venv
