@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI PDF Reader</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen">
+
+    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-lg">
+        <h1 class="text-3xl font-bold text-center mb-6">📘 AI PDF Reader</h1>
+        <p class="text-center text-gray-400 mb-6">Upload a PDF and ask any question about it.</p>
+
+        <form method="POST" enctype="multipart/form-data" class="flex flex-col gap-4">
+            <div>
+                <label class="block mb-1 font-semibold">Upload PDF:</label>
+                <input type="file" name="pdf" accept="application/pdf" required class="p-2 bg-gray-700 rounded-lg w-full">
+            </div>
+
+            <div>
+                <label class="block mb-1 font-semibold">Ask a Question:</label>
+                <input type="text" name="question" placeholder="e.g. What is NLP?" required class="p-2 bg-gray-700 rounded-lg w-full">
+            </div>
+
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 p-2 rounded-lg text-white font-semibold transition duration-200">
+        Get Answer
+      </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
